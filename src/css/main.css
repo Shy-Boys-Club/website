@@ -51,7 +51,7 @@ main {
 }
 
 .mold-rotator {
-    width: 30%;
+    max-width: 15%;
     transform-origin: center;
     animation: rotate 7000ms linear infinite;
 }
@@ -60,4 +60,11 @@ main {
     to {
         transform: rotateY(360deg);
     }
+}
+
+@media only screen and (max-width: 720px) {
+
+.mold-rotator {
+    max-width: 60%;
+}
 }
